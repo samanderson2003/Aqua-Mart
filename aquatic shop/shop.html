@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop - Aqua Shop</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff; /* White background */
+    }
+    .navbar {
+      background-color: #00796b;
+    }
+    .navbar-brand, .navbar-nav .nav-link {
+      color: #fff;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #004d40;
+    }
+    .navbar-brand:hover {
+      color: #fff; /* Set the color to the same color as the default state */
+    }
+    .section-title {
+      text-align: center;
+      margin: 40px 0 20px;
+      color: #00796b;
+    }
+    .card {
+      margin: 20px 0;
+    }
+    .footer {
+      background-color: #f8f9fa;
+      padding: 20px 0;
+      text-align: center;
+    }
+    .cart-container {
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="#">Aqua Shop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="homepage.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="shop.html">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="service.html">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="feedback.html">Feedback</a>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+      .card-img-top {
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+      }
+    </style>
+    <title>Fish Store</title>
+  </head>
+  <div class="container">
+    <h2 class="section-title">Fishes</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="fish01.jpg" class="card-img-top" alt="Fish 1">
+          <div class="card-body">
+            <h5 class="card-title">Tropical Fish</h5>
+            <p class="card-text">Colorful and vibrant tropical fish.</p>
+            <p class="card-text"><strong>Price:</strong> $15.00</p>
+            <button class="btn btn-primary add-to-cart" data-name="Tropical Fish" data-price="15.00">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="fish2.jpg" class="card-img-top" alt="Fish 2">
+          <div class="card-body">
+            <h5 class="card-title">Goldfish</h5>
+            <p class="card-text">Beautiful goldfish for your aquarium.</p>
+            <p class="card-text"><strong>Price:</strong> $10.00</p>
+            <button class="btn btn-primary add-to-cart" data-name="Goldfish" data-price="10.00">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="fish3.jpg" class="card-img-top" alt="Fish 3">
+          <div class="card-body">
+            <h5 class="card-title">Betta Fish</h5>
+            <p class="card-text">Elegant and colorful betta fish.</p>
+            <p class="card-text"><strong>Price:</strong> $20.00</p>
+            <button class="btn btn-primary add-to-cart" data-name="Betta Fish" data-price="20.00">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="wildfish1.jpg" class="card-img-top" alt="Wild Fish 1">
+              <div class="card-body">
+                <h5 class="card-title">Wild Fish</h5>
+                <p class="card-text">Exotic and unique wild fish.</p>
+                <p class="card-text"><strong>Price:</strong> $15.00</p>
+                <button class="btn btn-primary add-to-cart" data-name="Wild Fish" data-price="15.00">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="shrimp1.jpg" class="card-img-top" alt="Shrimp 1">
+              <div class="card-body">
+                <h5 class="card-title">Shrimp</h5>
+                <p class="card-text">Colorful and lively shrimps.</p>
+                <p class="card-text"><strong>Price:</strong> $10.00</p>
+                <button class="btn btn-primary add-to-cart" data-name="Shrimp" data-price="10.00">Buy Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="turtle1.jpg" class="card-img-top" alt="Turtle 1">
+              <div class="card-body">
+                <h5 class="card-title">Clown Fish</h5>
+                <p class="card-text">cute and fascinating clown.</p>
+                <p class="card-text"><strong>Price:</strong> $20.00</p>
+                <button class="btn btn-primary add-to-cart" data-name="Clown Fish" data-price="20.00">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <h2 class="section-title">Plants and Sands</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="plant1.jpg" class="card-img-top" alt="Plant 1">
+            <div class="card-body">
+              <h5 class="card-title">Aquatic Moss</h5>
+              <p class="card-text">Lush green plants for your aquarium.</p>
+              <p class="card-text"><strong>Price:</strong> $8.00</p>
+              <button class="btn btn-primary add-to-cart" data-name="Aquatic Plants" data-price="8.00">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="plant2.jpg" class="card-img-top" alt="Plant 2">
+            <div class="card-body">
+              <h5 class="card-title">Samolus parviflorus 'Red'</h5>
+              <p class="card-text">Exotic plants for your tank.</p>
+              <p class="card-text"><strong>Price:</strong> $10.00</p>
+              <button class="btn btn-primary add-to-cart" data-name="Aquatic Plants 2" data-price="10.00">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="plant3.jpg" class="card-img-top" alt="Plant 3">
+            <div class="card-body">
+              <h5 class="card-title">Limnophila Sessiliflora Ambulia</h5>
+              <p class="card-text">Vibrant and colorful plants.</p>
+              <p class="card-text"><strong>Price:</strong> $9.00</p>
+              <button class="btn btn-primary add-to-cart" data-name="Aquatic Plants 3" data-price="9.00">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="plant4.jpg" class="card-img-top" alt="Plant 4">
+            <div class="card-body">
+              <h5 class="card-title">Aquatic Black Sand</h5>
+              <p class="card-text">Perfect for a fresh look.</p>
+              <p class="card-text"><strong>Price:</strong> $7.00</p>
+              <button class="btn btn-primary add-to-cart" data-name="Aquatic Plants 4" data-price="7.00">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="plant5.jpg" class="card-img-top" alt="Plant 5">
+            <div class="card-body">
+              <h5 class="card-title">Aquatic white soil</h5>
+              <p class="card-text">rick and shiny base for your aquarium.</p>
+              <p class="card-text"><strong>Price:</strong> $11.00</p>
+              <button class="btn btn-primary add-to-cart" data-name="Aquatic Plants 5" data-price="11.00">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="plant6.jpg" class="card-img-top" alt="Plant 6">
+            <div class="card-body">
+              <h5 class="card-title">Gravel Stones</h5>
+              <p class="card-text">Elegent and vibrant base.</p>
+              <p class="card-text"><strong>Price:</strong> $12.00</p>
+              <button class="btn btn-primary add-to-cart" data-name="Aquatic Plants 6" data-price="12.00">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <h2 class="section-title">Filters and Motors</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="filter1.jpg" class="card-img-top" alt="Filter 1">
+            <div class="card-body">
+              <h5 class="card-title">Aquarium Filter</h5>
+              <p class="card-text">Keep your water clean and clear.</p>
+              <p class="card-text"><strong>Price:</strong> $25.00</p>
+              <button class="btn btn-primary add-to-cart" data-name="Aquarium Filter" data-price="25.00">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="filter2.jpg" class="card-img-top" alt="Filter 2">
+            <div class="card-body">
+              <h5 class="card-title">Advanced Aquarium Filter</h5>
+              <p class="card-text">High-performance filter for large tanks.</p>
+              <p class="card-text"><strong>Price:</strong> $40.00</p>
+              <button class="btn btn-primary add-to-cart" data-name="Advanced Aquarium Filter" data-price="40.00">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="filter3.jpg" class="card-img-top" alt="Filter 3">
+            <div class="card-body">
+              <h5 class="card-title">Compact Aquarium Filter</h5>
+              <p class="card-text">Ideal for small to medium tanks.</p>
+              <p class="card-text"><strong>Price:</strong> $20.00</p>
+              <button class="btn btn-primary add-to-cart" data-name="Compact Aquarium Filter" data-price="20.00">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="motor1.jpg" class="card-img-top" alt="Motor 1">
+            <div class="card-body">
+              <h5 class="card-title">Aquarium Water temerature controller</h5>
+              <p class="card-text">Keeps the warm set up for fish in all climatic conditions.</p>
+              <p class="card-text"><strong>Price:</strong> $30.00</p>
+              <button class="btn btn-primary add-to-cart" data-name="Aquarium Motor" data-price="30.00">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="motor2.jpg" class="card-img-top" alt="Motor 2">
+            <div class="card-body">
+              <h5 class="card-title">Filtration Sponge</h5>
+              <p class="card-text">Low-noise motor for peaceful environments..</p>
+              <p class="card-text"><strong>Price:</strong> $45.00</p>
+              <button class="btn btn-primary add-to-cart" data-name="Powerful Aquarium Motor" data-price="45.00">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="motor3.jpg" class="card-img-top" alt="Motor 3">
+            <div class="card-body">
+              <h5 class="card-title">Nets</h5>
+              <p class="card-text">Chases and Traps Fishes</p>
+              <p class="card-text"><strong>Price:</strong> $35.00</p>
+              <button class="btn btn-primary add-to-cart" data-name="Quiet Aquarium Motor" data-price="35.00">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <h2 class="section-title">Toys and Decorations</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="toy1.jpg" class="card-img-top" alt="Toy 1">
+            <div class="card-body">
+              <h5 class="card-title">Aquarium Toys</h5>
+              <p class="card-text">Fun toys for your fish.</p>
+              <p class="card-text"><strong>Price:</strong> $5.00</p>
+              <button class="btn btn-primary add-to-cart" data-name="Aquarium Toys" data-price="5.00">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="toy2.jpg" class="card-img-top" alt="Toy 2">
+            <div class="card-body">
+              <h5 class="card-title">Interactive Fish Toy</h5>
+              <p class="card-text">Engaging toy for active fish.</p>
+              <p class="card-text"><strong>Price:</strong> $7.00</p>
+              <button class="btn btn-primary add-to-cart" data-name="Interactive Fish Toy" data-price="7.00">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="toy3.jpg" class="card-img-top" alt="Toy 3">
+            <div class="card-body">
+              <h5 class="card-title">Floating Fish Toy</h5>
+              <p class="card-text">Floating toy for fish to play with.</p>
+              <p class="card-text"><strong>Price:</strong> $6.00</p>
+              <button class="btn btn-primary add-to-cart" data-name="Floating Fish Toy" data-price="6.00">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="decoration1.jpg" class="card-img-top" alt="Decoration 1">
+            <div class="card-body">
+              <h5 class="card-title">Aquarium Decorative Air Stones</h5>
+              <p class="card-text">Beautiful decorations for your tank.</p>
+              <p class="card-text"><strong>Price:</strong> $15.00</p>
+              <button class="btn btn-primary add-to-cart" data-name="Aquarium Decorations" data-price="15.00">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="decoration2.jpg" class="card-img-top" alt="Decoration 2">
+            <div class="card-body">
+              <h5 class="card-title">Top Light</h5>
+              <p class="card-text">Colorful coral reef for a vibrant tank.</p>
+              <p class="card-text"><strong>Price:</strong> $20.00</p>
+              <button class="btn btn-primary add-to-cart" data-name="Coral Reef Decoration" data-price="20.00">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="decoration3.jpg" class="card-img-top" alt="Decoration 3">
+            <div class="card-body">
+              <h5 class="card-title">Underwater Castle</h5>
+              <p class="card-text">Majestic castle for a fairy-tale aquarium.</p>
+              <p class="card-text"><strong>Price:</strong> $25.00</p>
+              <button class="btn btn-primary add-to-cart" data-name="Underwater Castle" data-price="25.00">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <h2 class="section-title">Tanks and Bowls</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="tank1.jpg" class="card-img-top" alt="Tank 1">
+            <div class="card-body">
+              <h5 class="card-title">Wall Hanging Bowls</h5>
+              <p class="card-text">Compact and stylish tanks.</p>
+              <p class="card-text"><strong>Price:</strong> $50.00</p>
+              <button class="btn btn-primary add-to-cart" data-name="Small Tank" data-price="50.00">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="tank2.jpg" class="card-img-top" alt="Tank 2">
+            <div class="card-body">
+              <h5 class="card-title">Table Bowls</h5>
+              <p class="card-text">Perfect for moderate-sized aquariums.</p>
+              <p class="card-text"><strong>Price:</strong> $100.00</p>
+              <button class="btn btn-primary add-to-cart" data-name="Medium Tank" data-price="100.00">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="tank3.jpg" class="card-img-top" alt="Tank 3">
+            <div class="card-body">
+              <h5 class="card-title">Large Tank</h5>
+              <p class="card-text">Spacious tanks for large setups.</p>
+              <p class="card-text"><strong>Price:</strong> $200.00</p>
+              <button class="btn btn-primary add-to-cart" data-name="Large Tank" data-price="200.00">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="bowl1.jpg" class="card-img-top" alt="Bowl 1">
+            <div class="card-body">
+              <h5 class="card-title">Molded Tanks</h5>
+              <p class="card-text">Elegant glass Tanks for small fish.</p>
+              <p class="card-text"><strong>Price:</strong> $30.00</p>
+              <button class="btn btn-primary add-to-cart" data-name="Glass Bowl" data-price="30.00">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="bowl2.jpg" class="card-img-top" alt="Bowl 2">
+            <div class="card-body">
+              <h5 class="card-title">Plastic Seperation Tanks</h5>
+              <p class="card-text">Durable plastic Tanks for easy maintenance.</p>
+              <p class="card-text"><strong>Price:</strong> $20.00</p>
+              <button class="btn btn-primary add-to-cart" data-name="Plastic Bowl" data-price="20.00">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="bowl3.jpg" class="card-img-top" alt="Bowl 3">
+            <div class="card-body">
+              <h5 class="card-title">Decorative Bowl</h5>
+              <p class="card-text">Decorative bowls to enhance your decor.</p>
+              <p class="card-text"><strong>Price:</strong> $40.00</p>
+              <button class="btn btn-primary add-to-cart" data-name="Decorative Bowl" data-price="40.00">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+      <h2 class="section-title">Foods and Medicines</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="food1.jpg" class="card-img-top" alt="Food 1">
+            <div class="card-body">
+              <h5 class="card-title">Premium Fish Food</h5>
+              <p class="card-text">Nutritious food for your fish.</p>
+              <p class="card-text"><strong>Price:</strong> $10.00</p>
+              <button class="btn btn-primary add-to-cart" data-name="Fish Food" data-price="10.00">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="food2.jpg" class="card-img-top" alt="Food 2">
+            <div class="card-body">
+              <h5 class="card-title">Herbivore Fish Food</h5>
+              <p class="card-text">High-quality food for all fish types.</p>
+              <p class="card-text"><strong>Price:</strong> $15.00</p>
+              <button class="btn btn-primary add-to-cart" data-name="Premium Fish Food" data-price="15.00">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="food3.jpg" class="card-img-top" alt="Food 3">
+            <div class="card-body">
+              <h5 class="card-title">Vacation Foods</h5>
+              <p class="card-text">Specially formulated for herbivorous fish.</p>
+              <p class="card-text"><strong>Price:</strong> $12.00</p>
+              <button class="btn btn-primary add-to-cart" data-name="Herbivore Fish Food" data-price="12.00">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="medicine1.jpg" class="card-img-top" alt="Medicine 1">
+            <div class="card-body">
+              <h5 class="card-title">Fish Medicine</h5>
+              <p class="card-text">Keep your fish healthy with our medicines.</p>
+              <p class="card-text"><strong>Price:</strong> $12.00</p>
+              <button class="btn btn-primary add-to-cart" data-name="Fish Medicine" data-price="12.00">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="medicine2.jpg" class="card-img-top" alt="Medicine 2">
+            <div class="card-body">
+              <h5 class="card-title">Antibiotic Fish Medicine</h5>
+              <p class="card-text">Effective treatment for bacterial infections.</p>
+              <p class="card-text"><strong>Price:</strong> $18.00</p>
+              <button class="btn btn-primary add-to-cart" data-name="Antibiotic Fish Medicine" data-price="18.00">Buy Now</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="medicine3.jpg" class="card-img-top" alt="Medicine 3">
+            <div class="card-body">
+              <h5 class="card-title">Anti-Parasitic Medicine</h5>
+              <p class="card-text">Protect your fish from parasites.</p>
+              <p class="card-text"><strong>Price:</strong> $20.00</p>
+              <button class="btn btn-primary add-to-cart" data-name="Anti-Parasitic Medicine" data-price="20.00">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    
+    <div class="cart-container">
+      <h2 class="section-title">Shopping Cart</h2>
+      <ul class="list-group" id="cart-items"></ul>
+      <p class="mt-3"><strong>Total:</strong> $<span id="cart-total">0.00</span></p>
+      <button id="place-order" class="btn btn-success mt-3">Place Order</button>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Aqua Shop. All rights reserved.</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    const cartItems = [];
+    const cartTotalElement = document.getElementById('cart-total');
+    const cartItemsElement = document.getElementById('cart-items');
+
+    document.querySelectorAll('.add-to-cart').forEach(button => {
+      button.addEventListener('click', () => {
+        const name = button.getAttribute('data-name');
+        const price = parseFloat(button.getAttribute('data-price'));
+
+        const item = cartItems.find(item => item.name === name);
+        if (item) {
+          item.quantity += 1;
+        } else {
+          cartItems.push({ name, price, quantity: 1 });
+        }
+
+        updateCart();
+      });
+    });
+
+    document.getElementById('place-order').addEventListener('click', () => {
+      window.location.href = 'payment.html';
+    });
+
+    function updateCart() {
+      cartItemsElement.innerHTML = '';
+      let total = 0;
+
+      cartItems.forEach((item, index) => {
+        total += item.price * item.quantity;
+        const listItem = document.createElement('li');
+        listItem.classList.add('list-group-item', 'd-flex', 'justify-content-between', 'align-items-center');
+        listItem.innerHTML = `
+          ${item.name} - $${item.price.toFixed(2)} x ${item.quantity}
+          <button class="btn btn-danger btn-sm remove-item" data-index="${index}">Remove</button>
+        `;
+        cartItemsElement.appendChild(listItem);
+      });
+
+      cartTotalElement.textContent = total.toFixed(2);
+
+      document.querySelectorAll('.remove-item').forEach(button => {
+        button.addEventListener('click', () => {
+          const index = button.getAttribute('data-index');
+          cartItems.splice(index, 1);
+          updateCart();
+        });
+      });
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff; /* White background */
+      display: flex;
+      flex-direction: column;
+    }
+    .navbar {
+      background-color: rgba(0, 0, 0, 0.8); /* Navbar background with opacity */
+    }
+    .navbar-nav .nav-link {
+      color: #fff !important;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #b2dfdb !important;
+    }
+    .container {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    h1, h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+    .service-item {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .service-item img {
+      width: 100%;
+      max-width: 800px;
+      height: 450px; /* Fixed landscape size */
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .phone-number {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 24px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation button -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Aqua Shop</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="homepage.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="shop.html">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="service.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="feedback.html">Feedback</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Our Services</h1>
+    <p>We offer professional setup and decoration services for your aquariums. Our experts will help you create the perfect aquatic environment for your fish and plants.</p>
+    
+    <div class="service-item">
+      <h2>Experience the Art of Perfect Tank Setups</h2>
+      <img src="tank01.jpg" alt="Tank Setup 1">
+    </div>
+
+    <div class="service-item">
+      <h2>Professional Tank Setups for Healthy, Happy Fish</h2>
+      <img src="tank02.jpg" alt="Tank Setup 2">
+    </div>
+
+    <div class="service-item">
+      <h2>We Transform Spaces with Beautiful Aquatic Tanks</h2>
+      <img src="tank03.jpg" alt="Tank Setup 3">
+    </div>
+
+    <div class="phone-number">
+      <p>Contact our service provider at: <strong>(123) 456-7890</strong></p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
